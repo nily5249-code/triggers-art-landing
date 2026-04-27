@@ -57,6 +57,10 @@ function createWorkCard(work, index) {
 }
 
 function renderArtists() {
+  if (!artistsGrid || !window.exhibitionData) {
+    return;
+  }
+
   const fragment = document.createDocumentFragment();
   exhibitionData.artists.forEach((artist, index) => {
     fragment.appendChild(createArtistCard(artist, index));
@@ -65,6 +69,10 @@ function renderArtists() {
 }
 
 function renderWorks() {
+  if (!worksGrid || !window.exhibitionData) {
+    return;
+  }
+
   const fragment = document.createDocumentFragment();
   exhibitionData.works.forEach((work, index) => {
     fragment.appendChild(createWorkCard(work, index));
@@ -73,6 +81,10 @@ function renderWorks() {
 }
 
 function bindExternalLinks() {
+  if (!window.exhibitionData) {
+    return;
+  }
+
   artistApplyButtons.forEach((button) => {
     button.setAttribute("href", exhibitionData.artistApplyLink);
     button.setAttribute("target", "_blank");
