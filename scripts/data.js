@@ -1,7 +1,8 @@
 const exhibitionData = {
   title: "제1회 트리거스 ART 전시회",
   artistApplyLink: "https://forms.gle/XT9k76G4nESxZmsr9",
-  visitorApplyLink: "https://forms.google.com/your-visitor-form",
+  visitorApplyLink:"https://docs.google.com/forms/d/e/1FAIpQLSdD3CogdZ39spd7FUfaxExPLp8sIQIiAWusK0lTvGiS7mnBoA/viewform",
+,
   artists: [
     {
       name: "Park J.",
